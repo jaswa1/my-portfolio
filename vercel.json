@@ -1,5 +1,10 @@
 {
   "buildCommand": "next build --no-lint",
   "framework": "nextjs",
-  "outputDirectory": ".next"
+  "outputDirectory": ".next",
+  "devCommand": "next dev",
+  "installCommand": "npm install",
+  "environment": {
+    "NODE_VERSION": "18.x"
+  }
 } 
