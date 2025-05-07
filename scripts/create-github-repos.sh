@@ -53,4 +53,7 @@ for i in "${!repos[@]}"; do
 done
 
 echo "All repositories created successfully!"
-echo "You can now clone them and add your project code." 
+echo "You can now clone them and add your project code."
+
+cd ~/my-portfolio
+npx vercel --cwd ./public
