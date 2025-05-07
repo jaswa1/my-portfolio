@@ -303,6 +303,28 @@
             transform: scale(1.2);
         }
         
+        .resume-button {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 25px;
+            font-weight: 500;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .resume-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .resume-button i {
+            margin-right: 8px;
+        }
+        
         .contact {
             text-align: center;
             padding: 60px 0;
@@ -576,6 +598,10 @@
                     <i class="fa-brands fa-twitter"></i>
                 </a>
             </div>
+            <a href="#" class="resume-button" download>
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Download Resume
+            </a>
         </section>
         
         <section class="contact">
