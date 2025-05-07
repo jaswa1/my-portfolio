@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Jaswal - AI Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 0;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #2563eb;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .projects {
+            margin: 40px 0;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #333;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2563eb;
+        }
+        
+        .project-description {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .tag {
+            background: #e6f0ff;
+            color: #2563eb;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+        
+        .github-link {
+            display: inline-block;
+            color: #2563eb;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+        
+        .github-link:hover {
+            text-decoration: underline;
+        }
+        
+        .contact {
+            text-align: center;
+            padding: 50px 0;
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+        }
+        
+        .email-link {
+            color: #2563eb;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a;
+                color: #f5f5f5;
+            }
+            
+            .project-card {
+                background: #2a2a2a;
+            }
+            
+            .project-description {
+                color: #ccc;
+            }
+            
+            .tag {
+                background: #3a3a3a;
+                color: #90caf9;
+            }
+            
+            h1, .project-title {
+                color: #90caf9;
+            }
+            
+            .tagline {
+                color: #ddd;
+            }
+            
+            .github-link, .email-link {
+                color: #90caf9;
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Raj Jaswal</h1>
+            <p class="tagline">AI Engineer Building Intelligent Systems</p>
+        </header>
+        
+        <section class="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3 class="project-title">MTMT (Metrics That Matter)</h3>
+                    <p class="project-description">LLM-powered executive dashboard enabling C-Suite leaders to access key market insights through natural language interactions. Designed and led the development of an AI-powered analytics platform that provides market insights through sophisticated natural language processing.</p>
+                    <div class="tags">
+                        <span class="tag">LLM</span>
+                        <span class="tag">Executive Dashboard</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                    <a href="https://github.com/jaswa1/mtmt-dashboard" class="github-link" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">E.S.T.E.E AI Innovation Hackathon</h3>
+                    <p class="project-description">Conceived and developed a working proof-of-concept showcasing AI's potential to streamline enterprise insight discovery. Secured organizational buy-in from senior executives for future integration, demonstrating the value of innovation ecosystems in corporate settings.</p>
+                    <div class="tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">Hackathon</span>
+                        <span class="tag">Enterprise</span>
+                        <span class="tag">Innovation</span>
+                    </div>
+                    <a href="https://github.com/jaswa1/estee-ai-hackathon" class="github-link" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">HERO - ELC's Forecasting Suite</h3>
+                    <p class="project-description">Directed a multi-disciplinary team in delivering a strategic forecasting tool used by Supply Chain, Finance, R&D, and Strategy units. Enabled collaborative insight sharing across business verticals and successfully embedded ML-driven forecasting into corporate operations.</p>
+                    <div class="tags">
+                        <span class="tag">ML</span>
+                        <span class="tag">Forecasting</span>
+                        <span class="tag">Cross-functional</span>
+                        <span class="tag">Supply Chain</span>
+                    </div>
+                    <a href="https://github.com/jaswa1/hero-forecasting" class="github-link" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">FENCE - Feature Evaluation Platform</h3>
+                    <p class="project-description">Delivered an AI-driven product intelligence solution to evaluate consumer sentiment in real-time, informing product development and market positioning. The platform provided stakeholders with actionable insights, showcasing the strategic power of behavioral analytics.</p>
+                    <div class="tags">
+                        <span class="tag">Consumer Analytics</span>
+                        <span class="tag">Sentiment Analysis</span>
+                        <span class="tag">Product Intelligence</span>
+                    </div>
+                    <a href="https://github.com/jaswa1/fence-platform" class="github-link" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">SpeEmo - Emotion Recognition System</h3>
+                    <p class="project-description">Designed an AI/ML system to interpret affective cues in speech, integrating NLP and sentiment analysis. Demonstrated applications in human-centered AI experiences, accessibility, and education technology to support more intuitive human-computer interactions.</p>
+                    <div class="tags">
+                        <span class="tag">Speech Processing</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">Sentiment Analysis</span>
+                        <span class="tag">Accessibility</span>
+                    </div>
+                    <a href="https://github.com/jaswa1/speemo" class="github-link" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">Real-time Stroke Recovery System</h3>
+                    <p class="project-description">Led development of proprietary AI/ML models that process hand and eye movement data, creating adaptive virtual environments that respond dynamically to patient progress. Introduced blockchain for HIPAA-compliant data privacy, ensuring ethical and secure data handling.</p>
+                    <div class="tags">
+                        <span class="tag">Rehabilitation</span>
+                        <span class="tag">Medical AI</span>
+                        <span class="tag">Blockchain</span>
+                        <span class="tag">Health Tech</span>
+                    </div>
+                    <a href="https://github.com/jaswa1/stroke-recovery-system" class="github-link" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact">
+            <h2>Let's Connect</h2>
+            <a href="mailto:raj@jaswal.ai" class="email-link">raj@jaswal.ai</a>
+        </section>
+    </div>
+</body>
+</html> 
